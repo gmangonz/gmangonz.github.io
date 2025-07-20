@@ -1,6 +1,6 @@
 ---
 title: German Gonzalez
-layout: Homepage
+layout: neumorphism
 permalink: /
 content-type: static
 ---
