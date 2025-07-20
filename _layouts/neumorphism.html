@@ -59,13 +59,13 @@
     {% endif %} -->
     
     <!-- FEATURED PROJECTS -->
-    {% assign featured = site.data.projects | where_exp:'p','p.featured != false' %}
-    {% if featured and featured.size > 0 %}
+    <!-- {% assign featured = site.data.projects | where_exp:'p','p.featured != false' %}
+    {% if featured and featured.size > 0 %} -->
     <section id="projects" class="projects-block">
       <h2>Featured Projects</h2>
       {% include featured-projects.html %}
     </section>
-    {% endif %}
+    <!-- {% endif %} -->
   </div>
   {% include Footer.html %}
 </body>
