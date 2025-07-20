@@ -48,8 +48,8 @@ ie_css: "/assets/css/ie-target.css"
 
 # Menu Items
 menu:
-  - title: "About"
-    url: "/about"
+  - title: "Projects"
+    url: "/projects"
 
 # Footer
 footer:
