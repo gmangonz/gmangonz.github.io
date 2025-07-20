@@ -24,7 +24,7 @@
 # Preferences (controls template behavior)
 preferences:
   homepage:
-    enabled: false
+    enabled: true
   search:
     enabled: true
   backlinks:
@@ -40,6 +40,16 @@ heading: "German Gonzalez"
 description: "Computer Vision and AI Enthusiast"
 url: "https://gmangonz.github.io"
 baseurl: ""
+
+
+about:
+  tagline: "Computer Vision and AI Enthusiast"
+  available: "August 2025"
+  # resume_url: "/assets/resume/German_Gonzalez_Resume.pdf"
+  email: "germanurielgonzalez@gmail.com"
+  linkedin: "https://www.linkedin.com/in/gmangonza/"
+  github: "https://github.com/gmangonz"
+
 
 # Asset Configuration
 apple_touch_icon: "/assets/img/profile.png"
