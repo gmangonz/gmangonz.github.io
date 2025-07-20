@@ -2,7 +2,7 @@
 title: "About"
 layout: Post
 content-type: "static"
-permalink: /about
+permalink: /about/
 ---
 
 A recent M.S. Electrical Engineering graduate from Northeastern University concentrating in Computer Vision, Machine Learning, and Algorithms. I completed my B.S. in Electrical Engineering at Rice University, giving me a strong cross‑disciplinary foundation.

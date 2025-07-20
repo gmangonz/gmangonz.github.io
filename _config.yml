@@ -55,13 +55,14 @@ about:
 apple_touch_icon: "/assets/img/profile.png"
 css_file: "/assets/css/style.css"
 ie_css: "/assets/css/ie-target.css"
+og_image: /assets/img/profile.png
 
 # Menu Items
 menu:
   - title: "About"
-    url: "/about"
+    url: "/about/"
   - title: "Projects"
-    url: "/projects"
+    url: "/projects/"
 
 # Footer
 footer:
