@@ -1,5 +1,5 @@
 ---
-title: "German Gonzalez"
+title: German Gonzalez
 layout: Homepage
 permalink: /
 # content-type: static
