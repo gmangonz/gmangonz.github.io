@@ -40,6 +40,11 @@ heading: "German Gonzalez"
 description: "Computer Vision and AI Enthusiast"
 url: "https://gmangonz.github.io"
 baseurl: ""
+# Site Configuration - neumorphism
+username: "German Gonzalez"
+github_username: gmangonz
+linkedin_username: gmangonza
+email: germanurielgonzalez@gmail.com
 
 
 about:
