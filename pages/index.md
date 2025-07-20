@@ -4,9 +4,11 @@
 
 layout: Post
 permalink: /
-title: Jekyll Garden
+title: German Gonzalez
 ---
 
-Jekyll Garden is a simple theme that turns your Obsidian notes into a beautiful website. If you use Obsidian for note-taking, this theme makes it easy to publish your markdown files as a connected website with wiki-style links and full-text search.
+A recent M.S. Electrical Engineering graduate from Northeastern University concentrating in Computer Vision, Machine Learning, and Algorithms. I completed my B.S. in Electrical Engineering at Rice University, giving me a strong cross‑disciplinary foundation.
 
-Start by reading [[Getting Started]] to set up your own Jekyll Garden. Learn how to use [[Wiki Links]] to connect your notes, explore the [[Markdown Guide]] for formatting, and customize your site with the [[Customization]] guide. When you're ready to share your notes online, follow the [[Deployment]] instructions.
+My research and project work center on applying deep learning–driven computer vision to robotics and intelligent, autonomous systems. This has given me hands‑on experience building vision pipelines, training models in PyTorch and TensorFlow, and optimizing deployments with tools such as TensorRT for real‑time performance. My primary work has centered around pose estimation, instance segmentation for 3D reconstruction, SLAM based approaches for camera tracking for scene reconstruction, and deployment to embedded devices and FPGAs with ONNX, TensorRT and VART.
+
+I’m energized by problems that create real‑world impact in medical imaging, surgical robotics, self‑driving, defense, and broader automation. Curiosity drives me; I’m always exploring new techniques in AI, reinforcement learning, and data science.
