@@ -35,9 +35,9 @@ preferences:
     enabled: true
 
 # Site Configuration
-title: "Your Site Title"
-heading: "Your Name"
-description: "A brief description of your site"
+title: "Personal Website"
+heading: "German Gonzalez"
+description: "Computer Vision and AI Enthusiast"
 url: "https://yoursite.com"
 baseurl: ""
 
@@ -48,16 +48,16 @@ ie_css: "/assets/css/ie-target.css"
 
 # Menu Items
 menu:
-  - title: "Notes"
-    url: "/notes"
-  - title: "Blog"
-    url: "/blog"
+  # - title: "Notes"
+  #   url: "/notes"
+  # - title: "Blog"
+  #   url: "/blog"
   - title: "About"
     url: "/about"
 
 # Footer
 footer:
-  copyright: "© 2024 Your Name. Contents under CC-BY-NC"
+  copyright: "© 2025 German Gonzalez. Contents under CC-BY-NC"
   credits:
     enabled: true
     url: "/credits"
