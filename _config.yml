@@ -3,7 +3,7 @@ description: Computer Vision and AI enthusiast
 baseurl: ""
 url: https://gmangonz.github.io/
 
-theme: cvless
+# theme: cvless
 
 # site settings
 taglong: Nothing to see here
