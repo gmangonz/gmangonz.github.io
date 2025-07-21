@@ -1,26 +1,35 @@
-title: Jekyll Serial Programmer
-markdown: kramdown
+title: ""
+description: ""
+baseurl: ""
+url: ""
 
-# for atom feed
-author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+exclude:
+  - demo/
+  - cvless.gemspec
+  - LICENSE
+  - README.md
+  - screenshot.png
 
 plugins:
-  - jemoji
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
 
-collections_dir: all_collections
-collections:
-  posts:
-    output: true
+sass:
+  style: compressed
+  sourcemap: never
 
-defaults:
-  - scope:
-      path: "_posts"
-    values:
-      layout: "post"
-      permalink: /posts/:title/
-exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
