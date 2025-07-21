@@ -2,35 +2,19 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <main class="blogfeed">
+    <main>
       {% include header.html %}
-      <section id="article">
-        {% if page.thumbnail %}
-        <!--  -->
-        {% assign page_thumbnail = page.thumbnail %}
-        <!--  -->
-        {% else %}
-        <!--  -->
-        {% assign page_thumbnail = '/assets/images/pattern.png' %}
-        <!--  -->
-        {% endif %}
-        <div
-          class="article-thumbnail"
-          style="
-            background-image: url('{{ site.baseurl }}/{{ page_thumbnail }}');
-          "
-        >
-          <h1 class="article-title">{{ page.title }}</h1>
-          <div class="article-bottom">
-            <small class="article-date">{{page.date | date_to_string}}</small>
-            <div class="article-categories">
-              {% for c in page.categories %}
-              <a href="#!" class="article-category">{{c}}</a>
-              {% endfor %}
-            </div>
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">{{page.title}}</h2>
+          <small class="date">{{page.date | date_to_string}}</small>
+          <div class="categories">
+            {% for c in page.categories %}
+            <a href="#!" class="category">{{c}}</a>
+            {% endfor %}
           </div>
         </div>
-        <div class="article-content">{{content}}</div>
+        <div class="content">{{content}}</div>
       </section>
       {% include footer.html %}
     </main>

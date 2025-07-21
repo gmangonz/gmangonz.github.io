@@ -1,12 +1,10 @@
-title: German Gonzalez
+title: Jekyll Serial Programmer
 markdown: kramdown
-url: "https://gmangonz.github.io/"
-# baseurl: "/jekyll-theme-material-you"
 
 # for atom feed
 author:
-  name: German Gonzalez
-  email: germanurielgonzalez@gmail.com
+  name: Sharad Raj Singh Maurya
+  email: dev_sharad@outlook.com
 
 plugins:
   - jemoji
