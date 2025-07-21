@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Structure from Motion
-lead: Developed something
+lead: Developed something.
 ---
 
 Testing
