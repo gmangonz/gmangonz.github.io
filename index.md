@@ -5,14 +5,12 @@ title: Home
 
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+A recent M.S. Electrical Engineering graduate from Northeastern University concentrating in Computer Vision, Machine Learning, and Algorithms. I completed my B.S. in Electrical Engineering at Rice University, giving me a strong cross‑disciplinary foundation.
 
-This is the home page. It can be used for a short introduction. [Click here](cv) to see the full CV, and [here](assets/files/cv.pdf) to download a print version. The theme also ships with a blog: [click here](posts) to scroll posts from the most recent. Finally, [click here](404) to see a page that can't be found.
+My research and project work center on applying deep learning–driven computer vision to robotics and intelligent, autonomous systems. This has given me hands‑on experience building vision pipelines, training models in PyTorch and TensorFlow, and optimizing deployments with tools such as TensorRT for real‑time performance. My primary work has centered around pose estimation, instance segmentation for 3D reconstruction, SLAM based approaches for camera tracking for scene reconstruction, and deployment to embedded devices and FPGAs with ONNX, TensorRT and VART.
 
-By default, the theme only contains these few pages in order to stay lean and flexible. However, it can be easily extended to accommodate more pages, [collections](https://jekyllrb.com/docs/collections/), [categories, and tags](https://jekyllrb.com/docs/posts/#tags-and-categories).
+I’m energized by problems that create real‑world impact in medical imaging, surgical robotics, self‑driving, defense, and broader automation. Curiosity drives me; I’m always exploring new techniques in AI, reinforcement learning, and data science.
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Below is a list of blog posts included for illustrative purposes. Make sure to delete or modify them before deploying your website.
+Listed below are personal projects I have worked on. Feel free to browse any project. Feedback and collaboration is welcomed!
 
 {% include archive.html %}
