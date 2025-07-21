@@ -31,33 +31,43 @@
     </div>
   </div>
   {% include landing-page.html %}
-  <div class="layout">
-    <!-- {%if site.show_aboutme_card %}
-      <section class="card neumorphism-card-big">
-        {% include section-aboutme.html %}
-      </section>
-    {% endif %}
-    {%if site.show_skills_card %}
-      <section class="card neumorphism-card-big">
-        {% include section-skills.html %}
-      </section>
-    {% endif %}
-    {%if site.show_timeline_card %}
-      <section class="card neumorphism-card-big">
-        {% include section-timeline.html %}
-      </section>
-    {% endif %}
-    {%if site.show_projects_card %}
-      <section class="card neumorphism-card-big">
-        {% include section-projects.html %}
-      </section>
-    {% endif %}
-    {%if site.show_contact_card %}
-    <section class="card neumorphism-card-big">
-      {% include section-contact.html %}
+  
+  <main class="wrapper">
+
+    <!-- HERO -->
+    <section id="hero" class="hero-block">
+      <h1 class="hero-name">{{ site.heading }}</h1>
+      {% comment %} Optionally surface availability or tagline from site config {% endcomment %}
+      {% if site.about.tagline %}
+        <p class="hero-tagline">{{ site.about.tagline }}</p>
+      {% endif %}
+      {% if site.about.available %}
+        <p class="hero-availability">Available: {{ site.about.available }}</p>
+      {% endif %}
+
+      <div class="hero-cta">
+        {% if site.about.resume_url %}
+          <a class="btn btn-primary" href="{{ site.about.resume_url | relative_url }}" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        {% endif %}
+        {% if site.about.email %}
+          <a class="btn" href="mailto:{{ site.about.email }}">Email</a>
+        {% endif %}
+        {% if site.about.linkedin %}
+          <a class="btn" href="{{ site.about.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        {% endif %}
+        {% if site.about.github %}
+          <a class="btn" href="{{ site.about.github }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+      </div>
     </section>
-    {% endif %} -->
-    
+
+    <!-- ABOUT SUMMARY FROM PAGE CONTENT -->
+    {% if content %}
+    <section id="about" class="about-block">
+      {{ content }}
+    </section>
+    {% endif %}
+
     <!-- FEATURED PROJECTS -->
     {% assign featured = site.data.projects | where_exp:'p','p.featured != false' %}
     {% if featured and featured.size > 0 %}
@@ -81,6 +91,46 @@
       </div>
     </section>
     {% endif %}
+
+    <!-- LATEST NOTES -->
+    {% if site.notes %}
+    {% assign note_items = site.notes | sort: 'date' | reverse | slice: 0,5 %}
+    <section id="latest-notes" class="notes-block">
+      <h2>Latest Notes</h2>
+      <ul>
+        {% for n in note_items %}
+          {% if n.feed == "show" %}
+          <li>
+            <a href="{{ n.url | relative_url }}">{{ n.title }}</a>
+            {% if n.date %}<span class="note-date">{{ n.date | date: "%b %-d, %Y" }}</span>{% endif %}
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p><a href="{{ '/notes' | relative_url }}">View all notes →</a></p>
+    </section>
+    {% endif %}
+
+    <!-- LATEST BLOG POSTS -->
+    {% if site.posts %}
+    {% assign posts_latest = site.posts | sort: 'date' | reverse | slice: 0,3 %}
+    <section id="latest-posts" class="posts-block">
+      <h2>Latest Posts</h2>
+      <ul>
+        {% for p in posts_latest %}
+          {% if p.feed == "show" %}
+          <li>
+            <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            {% if p.date %}<span class="post-date">{{ p.date | date: "%b %-d, %Y" }}</span>{% endif %}
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p><a href="{{ '/blog' | relative_url }}">View all posts →</a></p>
+    </section>
+    {% endif %}
+
+  </main>
 
   </div>
   {% include Footer.html %}
