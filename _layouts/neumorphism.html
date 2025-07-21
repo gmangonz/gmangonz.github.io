@@ -59,12 +59,29 @@
     {% endif %} -->
     
     <!-- FEATURED PROJECTS -->
-    <!-- {% assign featured = site.data.projects | where_exp:'p','p.featured != false' %}
-    {% if featured and featured.size > 0 %} -->
+    {% assign featured = site.data.projects | where_exp:'p','p.featured != false' %}
+    {% if featured and featured.size > 0 %}
     <section id="projects" class="projects-block">
-      {% include featured-projects.html %}
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        {% for p in featured %}
+        <article class="project-card">
+          <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+          {% if p.blurb %}<p>{{ p.blurb }}</p>{% endif %}
+          {% if p.tech %}
+            <ul class="project-tech">
+              {% for t in p.tech %}<li>{{ t }}</li>{% endfor %}
+            </ul>
+          {% endif %}
+          {% if p.repo %}
+            <p class="project-links"><a href="{{ p.repo }}" target="_blank" rel="noopener">Code</a></p>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
     </section>
-    <!-- {% endif %} -->
+    {% endif %}
+
   </div>
   {% include Footer.html %}
 </body>
