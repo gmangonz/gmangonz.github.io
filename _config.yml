@@ -6,8 +6,7 @@ url: https://gmangonz.github.io/
 # theme: cvless
 
 # site settings
-taglong: Nothing to see here
-tagshort: Personal Website
+taglong: Computer Vision and AI enthusiast
 cv: true
 
 # author settings
@@ -19,7 +18,7 @@ joblines:
   - Medtronic
   - Advance Visualization R&T
   - 20 Channel Center Boston, MA
-# address: Foobar Hall 1.23
+address: Boston, MA
 phone: +1 346 213 7428
 
 
