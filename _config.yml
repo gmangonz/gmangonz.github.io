@@ -1,14 +1,44 @@
-title: ""
-description: ""
+title: German Gonzalez
+description: Computer Vision and AI enthusiast
 baseurl: ""
-url: ""
+url: https://gmangonz.github.io/
 
+theme: cvless
+
+# site settings
+taglong: Nothing to see here
+tagshort: Personal Website
+cv: true
+
+# author settings
+author:
+  name: German Gonzalez
+  email: germanurielgonzalez@gmail.com
+photo: assets/files/photo.jpg
+joblines:
+  - Medtronic
+  - Advance Visualization R&T
+  - 20 Channel Center Boston, MA
+# address: Foobar Hall 1.23
+phone: +1 346 213 7428
+
+
+# profile links
+profile:
+  linkedin: https://www.linkedin.com/in/gmangonza
+  github: https://github.com/gmangonz
+
+# build settings
+permalink: pretty
 exclude:
   - demo/
   - cvless.gemspec
   - LICENSE
   - README.md
   - screenshot.png
+  - Gemfile
+  - vendor/
+  - docker-compose.yml
 
 plugins:
   - jekyll-feed
